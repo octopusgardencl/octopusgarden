@@ -34,7 +34,7 @@ header {
 
 /* Estilo del logo "OCTOPUS GARDEN" */
 .logo {
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, cursive; /* Fuente elegante */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, cursive; /* Fuente elegante */
   font-size: 2rem;
   color: #80ed99;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
