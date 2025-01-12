@@ -1,0 +1,210 @@
+/* Reset de estilos básicos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Estilo del body, fondo y fuente principal */
+body {
+  line-height: 1.6;
+  background: url('img/fondo.jpeg') center/cover no-repeat fixed;
+  color: rgba(43, 107, 78, 0.9);
+  overflow-x: hidden;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* Estilo del encabezado (navbar) */
+header {
+  background: rgba(43, 107, 78, 0.9);
+  padding: 1rem 2rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Estilo del contenedor de navegación */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Estilo del logo "OCTOPUS GARDEN" */
+.logo {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, cursive; /* Fuente elegante */
+  font-size: 2rem;
+  color: #80ed99;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  letter-spacing: 2px;
+  animation: pulse 3s infinite; /* Animación de latido suave */
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* Estilo de los enlaces de navegación */
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #80ed99;
+}
+
+/* Sección de introducción (Hero Section) */
+.hero-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #f4fcf3;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  animation: fadeIn 3s ease-in-out;
+}
+
+.btn {
+  background: #52b788;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+  animation: fadeIn 4s ease-in-out;
+}
+
+.btn:hover {
+  background: #80ed99;
+}
+
+/* Sección del catálogo */
+.catalog-section,
+.faq-section,
+.contact-section {
+  padding: 50px 20px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.catalog-section h2,
+.faq-section h2,
+.contact-section h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #2d6a4f;
+}
+
+/* Galería de plantas */
+.plant-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.plant-item {
+  width: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.plant-item img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.plant-item:hover {
+  transform: scale(1.05);
+}
+
+/* Estilo de las preguntas frecuentes */
+.faq-item {
+  margin-bottom: 20px;
+}
+
+/* Estilo del formulario de contacto */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+form input,
+form textarea,
+form button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background: #2d6a4f;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #80ed99;
+}
+
+/* Estilo del pie de página */
+footer {
+  background: rgba(45, 106, 79, 0.9);
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Animación de entrada suave */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
